@@ -1,5 +1,5 @@
 const Register = (req,res)=>{
-    res.send("register page")
+    res.send(req.body)
 }
 
 export default Register

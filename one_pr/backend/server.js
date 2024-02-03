@@ -7,7 +7,7 @@ app.get('/',(req,res)=>{
     res.send('server is ready ')
 })
 
-app.get('/animals',(req,res)=>{
+app.get('/api/animals',(req,res)=>{
     const animals =  [
         {
           "id": 1,

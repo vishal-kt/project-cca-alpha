@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Express Generator 
+
+    npm i express-generator -g
+
+to create new app anywhere : 
+
+open cmd move to desktop
+create new app: 
+    express appname --view=ejs
+
+    cd appname
+    npm i 
+    
+
+install mongoose js 
+    npm install mongoose
+
+require and setup connection
+    const mongoose = require ("mongoose");
+    mongoose.connect("");
+
+
+make schema
+
+   const userschema= mongoose.Schema({
+        username:String,
+        name:String,
+        age:Number
+    })
+
+create model 
+module.exports= mongoose.model("collection_name",schema);
+
+
+create model and export
+
